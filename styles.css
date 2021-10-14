@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    color: rgb(233, 192, 10);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.header::before {
+    content: "";
+    background: url(https://www.linkpicture.com/q/word_2.jpg) no-repeat center center/cover;
+    position: absolute;
+    /*to take it out of html flow*/
+    top: 0;
+    /*to remove all the space in websites*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /*to make it as background*/
+    opacity: 0.5;
+    /* here by using opacity text kharab nhi hota  */
+}
